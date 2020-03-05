@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>作业</title>
+    <style>
+        fieldset {
+            height: 700px;
+            width: 550px;
+        }
+        
+        legend {
+            color: red;
+            font-size: 20px;
+        }
+        
+        input {
+            width: 500px;
+            height: 30px;
+        }
+        
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>学生信息</h1>
+    <fieldset>
+        <legend>学生档案</legend>
+        <form action="#" method="get">
+            <p>姓名:</p>
+            <input type="text" name="name" required placeholder="请输入姓名">
+            <span>*</span>
+            <p>学号:</p>
+            <input type="text" name="number" required placeholder="请输入学号">
+            <span>*</span>
+            <p>手机号码:</p>
+            <input type="tel" name="phone" required placeholder="请输入手机号">
+            <span>*</span>
+            <p>邮箱地址:</p>
+            <input type="email" name="email" required placeholder="请输入邮箱地址">
+            <span>*</span>
+            <p>录取学校:</p>
+            <input type="search" name="school" list="names">
+            <datalist id="names">
+                <option>河北师范大学</option>
+                <option>河北科技大学</option>
+                <option>河北医科大学</option>
+                <option>河北工业大学</option>
+                <option>燕山大学</option>
+                <option>河北大学</option>
+            </datalist>
+            <p>入学成绩:</p>
+            <input type="number" name="score">
+            <p>入学时间:</p>
+            <input type="date" name="date" placeholder="年/月/日">
+            <br/>
+            <br/>
+            <input type="submit" value="提交">
+        </form>
+    </fieldset>
+</body>
+
+</html>
